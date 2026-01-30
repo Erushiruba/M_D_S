@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de Pago - TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="main.html" class="nav-brand">TechStore - 2026 - Actividad ESPE</a>
+        <div class="nav-links">
+            <a href="main.html">Inicio</a>
+            <a href="preventa.html">Preventa</a>
+            <a href="proceso_pago.html" class="active">Pago</a>
+            <a href="posventa.html">Posventa</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div> <a>Modelo preliminal</a></div>
+
+        <h1>Proceso de Pago</h1>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+
+            <section>
+                <h2>Información de Envío y Pago</h2>
+                <form action="" style="max-width: 100%;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Apellido">
+                    </div>
+                    <input type="email" placeholder="Correo Electrónico">
+                    <input type="text" placeholder="Dirección">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <input type="text" placeholder="Ciudad">
+                        <input type="text" placeholder="Código Postal">
+                    </div>
+
+                    <h3 style="margin-top: 1rem;">Método de Pago</h3>
+                    <input type="text" placeholder="Número de Tarjeta">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <input type="text" placeholder="MM/AA">
+                        <input type="password" placeholder="CVC">
+                    </div>
+
+                    <input type="submit" value="Finalizar Compra">
+                </form>
+            </section>
+
+            <section>
+                <h2>Resumen del Pedido</h2>
+                <div class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Laptop Gamer</td>
+                                <td>$1200.00</td>
+                            </tr>
+                            <tr>
+                                <td>Envío</td>
+                                <td>$20.00</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total</strong></td>
+                                <td><strong>$1220.00</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="text-align: center; margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                        Al hacer clic en "Finalizar Compra", aceptas nuestros términos y condiciones.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
+
+</html>
